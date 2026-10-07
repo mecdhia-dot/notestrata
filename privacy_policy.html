@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NoteStrata™ — Official Privacy Policy &amp; System Permissions Disclosure</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #111827;
+      --border: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --green: #22c55e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      line-height: 1.68;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+    }
+    .nav-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    .nav-bar a {
+      color: var(--muted);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.02);
+    }
+    .nav-bar a.active, .nav-bar a:hover {
+      color: var(--accent);
+      border-color: rgba(56,189,248,0.4);
+      background: rgba(56,189,248,0.08);
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(34, 197, 94, 0.12);
+      color: var(--green);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    h1 { margin: 0 0 8px 0; font-size: 28px; color: #fff; }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+    h2 { color: var(--accent); font-size: 18px; margin-top: 28px; margin-bottom: 10px; }
+    h3 { color: #e2e8f0; font-size: 15px; margin-top: 18px; margin-bottom: 6px; }
+    p, li { color: #cbd5e1; font-size: 15px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    code {
+      background: rgba(255,255,255,0.07);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #fde047;
+      font-family: Consolas, monospace;
+      font-size: 13.5px;
+    }
+    .highlight-box {
+      background: rgba(56, 189, 248, 0.07);
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    .footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-bar">
+      <a href="privacy_policy.html" class="active">Privacy Policy</a>
+      <a href="eula.html">End User License Agreement (EULA)</a>
+      <a href="open_source_notices.html">Open Source Notices</a>
+      <a href="support.html">Support &amp; Contact</a>
+    </nav>
+
+    <span class="badge">Local-First Desktop Utility &bull; No Developer Data Servers</span>
+    <h1>NoteStrata™ — Privacy Policy &amp; System Permissions Disclosure</h1>
+    <div class="meta">
+      <strong>Effective Date &amp; Last Updated:</strong> October 2026 &nbsp;|&nbsp;
+      <strong>Document Version:</strong> 2.1 (Microsoft Store Edition)<br />
+      <strong>Developer &amp; Independent Publisher:</strong> Mohamed Dhia Eddine Mechi &nbsp;|&nbsp;
+      <strong>Platform:</strong> Microsoft Windows 10 / 11
+    </div>
+
+    <div class="highlight-box">
+      <strong>Overview:</strong> <strong>NoteStrata™</strong> is designed and engineered as a <strong>local-first desktop productivity utility</strong> for Microsoft Windows. <strong>The Developer does not intentionally collect, receive, or otherwise obtain your NoteStrata™ User Content or personal information through NoteStrata™'s own servers. NoteStrata™ does not intentionally transmit, upload, synchronize, or remotely store your sticky note contents, task checklists, personal files, keystrokes, mouse activity, screen captures, or other User Content.</strong> All notes, checklists, styling preferences, and wallpaper compositions created within NoteStrata™ are stored and processed locally on your own Windows device.
+    </div>
+
+    <h2>Article 1. Local Data Storage &amp; Network Communication Scope</h2>
+    <h3>1.1 Strictly Local Storage Location</h3>
+    <p>All data created or configured by you within NoteStrata™—including sticky note titles, body text, checklist items, completion states, category tags, color hex codes, typography preferences, spatial coordinates (<code>pct_x</code>, <code>pct_y</code>, <code>tilt</code>), history/trash archives, and application settings—is stored locally on your device inside your Windows user profile directory:</p>
+    <ul>
+      <li><strong>Primary Database:</strong> <code>%USERPROFILE%\.notestrata\notes_data.json</code></li>
+      <li><strong>Automatic Safety Backup:</strong> <code>%USERPROFILE%\.notestrata\notes_data.backup.json</code></li>
+      <li><strong>Original Wallpaper Backup:</strong> <code>%USERPROFILE%\.notestrata\original_wallpaper_backup.png</code></li>
+      <li><strong>Active Composited Wallpaper:</strong> <code>%USERPROFILE%\.notestrata\active_sticky_wallpaper.bmp</code> (and <code>.png</code>)</li>
+    </ul>
+
+    <h3>1.2 Network Communication Scope (Local Notes vs. Updates, Announcements &amp; Platform Services)</h3>
+    <ul>
+      <li><strong>Zero Transmission of Sticky Notes or Personal Content:</strong> NoteStrata™ does not intentionally transmit, upload, or synchronize your sticky notes, checklists, wallpapers, or personal files to the Developer or any third party.</li>
+      <li><strong>In-App Updates &amp; Developer Project Announcements:</strong> NoteStrata™ (or future versions thereof) may periodically make read-only network requests to check for software updates, security patches, release notes, or in-app notifications/announcements regarding new features or upcoming projects and applications by <strong>Mohamed Dhia Eddine Mechi</strong>. Such requests only retrieve public version/announcement metadata. Standard network information, such as an IP address, and technical request information such as the application version, may be visible to the hosting or content-delivery provider (such as GitHub or Microsoft), and are not intended to include any of your sticky notes or personal content.</li>
+      <li><strong>Operating System, WebView2 &amp; Microsoft Store Components:</strong> Because NoteStrata™ executes on the Microsoft Windows operating system, renders its user interface through the Microsoft Edge WebView2 runtime, and may be downloaded, licensed, or updated through the Microsoft Store, those underlying Microsoft operating system, runtime, or platform services may independently communicate with Microsoft servers (for example, to verify store licenses, deliver runtime/store updates, or process OS-level crash/diagnostic telemetry) in accordance with Microsoft Corporation's own privacy policies and your Windows privacy settings.</li>
+    </ul>
+
+    <h3>1.3 No User Accounts or Registration</h3>
+    <p>NoteStrata™ does not require or provide user accounts, email registration, cloud sign-ins, or authentication tokens.</p>
+
+    <h2>Article 2. Windows OS Permissions &amp; Win32 API Technical Disclosure</h2>
+    <p>Because NoteStrata™ is a native Win32 desktop application that integrates interactive sticky notes directly onto your Windows desktop background, the Windows APIs utilized by NoteStrata™ technically have access to system-level information and capabilities necessary for the application's features. <strong>NoteStrata™ uses these system capabilities solely in real time on your local device to provide the features described below and does NOT use them to collect, record, store, or transmit personal information:</strong></p>
+    <ul>
+      <li><strong>Desktop Wallpaper Access &amp; Modification (<code>user32.dll</code> / <code>SystemParametersInfoW</code>):</strong> Reads your current Windows desktop wallpaper path from the Windows Registry (<code>HKCU\Control Panel\Desktop\WallPaper</code>) or the cached Windows transcoded wallpaper, saves an untouched local backup (<code>original_wallpaper_backup.png</code>), composites your sticky notes onto a copy of that image in local memory (RAM) using Pillow (PIL), writes the composite bitmap locally (<code>active_sticky_wallpaper.bmp</code>), and sets it as the active desktop wallpaper. NoteStrata™ does not intentionally transmit your original wallpaper or the composited image off your device. When you toggle notes OFF (via <code>Alt+S</code> or the toolbar), NoteStrata™ restores your backed-up wallpaper locally.</li>
+      <li><strong>Low-Level Mouse Hook (<code>SetWindowsHookExW</code> / <code>WH_MOUSE_LL</code>):</strong> Installs a local Win32 low-level mouse hook to power the <strong>"Click-to-Check"</strong> feature, allowing you to click sticky note checkboxes directly on your desktop wallpaper without opening the NoteStrata™ window. While a <code>WH_MOUSE_LL</code> hook technically receives notification of mouse events across the desktop session, NoteStrata™ filters exclusively for left mouse button presses (<code>WM_LBUTTONDOWN</code>). All non-click events (such as mouse movement) are immediately passed through to Windows without inspection. On a left-click, NoteStrata™ checks in volatile memory whether the click coordinate intersects a rendered sticky note checkbox hitbox and whether the window under the cursor (<code>WindowFromPoint</code>) is the Windows Desktop surface (<code>Progman</code>, <code>WorkerW</code>, or <code>SHELLDLL_DefView</code>). Clicks inside any other application window are ignored. NoteStrata™ never logs, stores to disk, or transmits mouse coordinates or click histories.</li>
+      <li><strong>Global Keyboard Shortcut (<code>RegisterHotKey</code> — <code>Alt+S</code> or Custom Shortcut):</strong> Registers a global shortcut with Windows so you can show or hide desktop sticky notes from anywhere in Windows, and listens for key combinations inside the application when you explicitly open the Shortcut Recorder. NoteStrata™ is <strong>not</strong> a keylogger; it only receives an OS event when your specific registered shortcut combination is pressed, and does not monitor, record, store, or transmit general keyboard input or typed text.</li>
+      <li><strong>Screen Color Eyedropper (<code>gdi32.dll</code> / <code>GetDC</code> &amp; <code>GetPixel</code>):</strong> When you explicitly click the Eyedropper (Screen Color Picker) button inside the Color Studio, NoteStrata™ uses <code>GetDC(0)</code> and <code>GetPixel</code> to read the RGB color value of the single screen pixel beneath your cursor so you can match note colors to your wallpaper. Only the 6-character hexadecimal color code (<code>#RRGGBB</code>) selected by your click is applied to your note. NoteStrata™ does not capture, save, or transmit screen recordings or screenshots.</li>
+      <li><strong>Windows Native Spell Checking (<code>MsSpellCheckingFacility.dll</code> / <code>ISpellChecker</code> COM API):</strong> Passes individual words typed inside sticky notes to the Windows OS Spell Checker COM interface to provide spelling suggestions and typo corrections. NoteStrata™ invokes the Windows operating system's spell-checking API. NoteStrata™ does not itself transmit the text to a separate third-party spell-checking service.</li>
+      <li><strong>Windows Startup Registry Entry (<code>HKCU\Software\Microsoft\Windows\CurrentVersion\Run</code>):</strong> Reads, writes, or deletes the <code>NoteStrata</code> value under your current-user registry hive so the application can optionally launch in the system tray when you sign into Windows, controlled by you at any time via the <em>"Start with Windows"</em> option in the system tray menu.</li>
+    </ul>
+
+    <h2>Article 3. Visual Privacy &amp; Screen-Sharing Advisory</h2>
+    <p>Because NoteStrata™ is designed to display sticky notes visibly on your desktop wallpaper, anyone who can physically view your monitor—or anyone viewing your desktop through screen-sharing, video conferencing, remote desktop, or streaming software (such as Microsoft Teams, Zoom, Discord, OBS, Google Meet, or TeamViewer)—can read the notes displayed on your wallpaper. Do not write plaintext passwords, financial PINs, recovery seed phrases, private keys, or sensitive personal/confidential data on desktop sticky notes. Press <code>Alt+S</code> or click the <em>"On Wallpaper"</em> toggle button in the toolbar to hide notes from your wallpaper before sharing your screen.</p>
+
+    <h2>Article 4. Third-Party Analytics, Advertising &amp; Cookies</h2>
+    <p>NoteStrata™ does not embed third-party analytics, telemetry, or crash-reporting SDKs (such as Google Analytics, Sentry, Mixpanel, or Firebase), contains no advertisements or marketing trackers, and does not use tracking cookies or cross-application fingerprinting.</p>
+
+    <h2>Article 5. Data Protection Laws &amp; Technical Control Over Local Data</h2>
+    <ul>
+      <li><strong>No Developer Possession or Processing of Personal Data:</strong> The Developer does not receive, access, host, store, or process your locally stored NoteStrata™ content on any Developer-controlled systems or servers. All storage and processing of your notes take place locally on your own hardware.</li>
+      <li><strong>California (CCPA / CPRA) Disclosure:</strong> The Developer does not intentionally collect personal information through NoteStrata™'s own data-collection systems, and does not sell or intentionally share User Content or personal information for advertising or other commercial purposes.</li>
+      <li><strong>Technical Control vs. Formal Statutory Rights (GDPR / UK GDPR / International Laws):</strong> Certain data protection laws grant individuals formal legal rights (such as rights to request access, correction, deletion, or portability) regarding personal data held by a data controller. Because the Developer does not receive, hold, or have access to your locally stored NoteStrata™ data, the Developer cannot access, retrieve, modify, or delete your local files on your behalf. Instead, you have direct technical control over the locally stored NoteStrata™ data on your device and can inspect, edit, export, back up, or permanently delete those files using appropriate Windows tools and permissions.</li>
+    </ul>
+
+    <h2>Article 6. Data Retention &amp; How to Delete Your Local Data</h2>
+    <p>Your notes, history archive, and settings remain on your computer only for as long as you choose to keep them. You can delete all local NoteStrata™ data created by the application by:</p>
+    <ol>
+      <li>Clicking <strong>Clear All</strong> in the NoteStrata™ toolbar and clicking <strong>Empty History</strong> in the History modal; and/or</li>
+      <li>Exiting NoteStrata™ (via <strong>Quit</strong> in the system tray menu) and deleting the <code>%USERPROFILE%\.notestrata</code> folder in Windows File Explorer.</li>
+    </ol>
+    <p><em>Note on Local Retention:</em> This removes the NoteStrata™ files stored in the application's local data directory. Copies may remain in operating-system backups, cloud-storage backups (such as OneDrive), file-history systems, or other backup/recovery mechanisms outside the Developer's control.</p>
+
+    <h2>Article 7. Children's Privacy</h2>
+    <p>NoteStrata™ is a general-audience productivity utility, is not directed to children, and does not knowingly collect, solicit, or transmit personal information from children.</p>
+
+    <h2>Article 8. Updates to This Policy &amp; Contact Information</h2>
+    <p>The Developer may update this Privacy Policy from time to time to reflect changes in application features or legal requirements. Updated versions will be published at this URL and included in updated releases of the Software. For questions or support inquiries, please visit the <a href="support.html" style="color:var(--accent);">NoteStrata™ Support &amp; Contact Page</a>.</p>
+
+    <h3>8.1 Legal Disclaimer</h3>
+    <p>This Privacy Policy describes the Developer's intended data-handling practices for the version of NoteStrata™ identified above. It is not intended to provide legal advice or to waive, restrict, or replace any rights or obligations that cannot lawfully be waived or restricted under applicable law. If a conflict exists between this Privacy Policy and a mandatory requirement of applicable data-protection or consumer-protection law, the mandatory legal requirement controls.</p>
+
+    <div class="footer">
+      <strong>NoteStrata™ v1.0.0</strong> &bull; Created &amp; Designed by <strong>Mohamed Dhia Eddine Mechi</strong><br />
+      &copy; 2026 Mohamed Dhia Eddine Mechi. All Rights Reserved. &nbsp;|&nbsp;
+      <a href="eula.html">EULA</a> &bull; <a href="open_source_notices.html">Open Source Notices</a> &bull; <a href="support.html">Support</a>
+    </div>
+  </div>
+</body>
+</html>

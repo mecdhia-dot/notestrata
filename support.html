@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NoteStrata™ — Official Support, FAQ &amp; Help Center</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #111827;
+      --border: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --green: #22c55e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      line-height: 1.68;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+    }
+    .nav-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    .nav-bar a {
+      color: var(--muted);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.02);
+    }
+    .nav-bar a.active, .nav-bar a:hover {
+      color: var(--accent);
+      border-color: rgba(56,189,248,0.4);
+      background: rgba(56,189,248,0.08);
+    }
+    h1 { margin: 0 0 8px 0; font-size: 26px; color: #fff; }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid var(--border); }
+    h2 { color: var(--accent); font-size: 18px; margin-top: 28px; margin-bottom: 10px; }
+    .faq-item {
+      background: rgba(255,255,255,0.025);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 14px;
+    }
+    .faq-item h3 { margin: 0 0 6px 0; font-size: 15.5px; color: #f1f5f9; }
+    .faq-item p { margin: 0; font-size: 14.5px; color: #cbd5e1; }
+    code {
+      background: rgba(255,255,255,0.07);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #fde047;
+      font-family: Consolas, monospace;
+      font-size: 13px;
+    }
+    .footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    .footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-bar">
+      <a href="privacy_policy.html">Privacy Policy</a>
+      <a href="eula.html">End User License Agreement (EULA)</a>
+      <a href="open_source_notices.html">Open Source Notices</a>
+      <a href="support.html" class="active">Support &amp; Contact</a>
+    </nav>
+
+    <h1>NoteStrata™ — Official Support &amp; Help Center</h1>
+    <div class="meta">
+      <strong>Application:</strong> NoteStrata™ v1.0.0 for Windows 10 &amp; Windows 11 &nbsp;|&nbsp;
+      <strong>Developer &amp; Publisher:</strong> Mohamed Dhia Eddine Mechi
+    </div>
+
+    <h2>Quick Start &amp; Keyboard Shortcuts</h2>
+    <div class="faq-item">
+      <h3>How do I check off a to-do item directly on my Windows desktop wallpaper?</h3>
+      <p>Keep NoteStrata™ running in your Windows System Tray (bottom-right clock area), minimize your open windows (`Win + D`), and left-click any checkbox on your wallpaper. It will toggle in ~20ms!</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I quickly hide or show all sticky notes on my wallpaper before sharing my screen?</h3>
+      <p>Press <code>Alt + S</code> from anywhere in Windows (or click the <strong>On Wallpaper</strong> button in the NoteStrata™ top bar) to toggle your wallpaper notes OFF and restore your clean original wallpaper. You can customize this shortcut anytime by clicking the <code>Alt+S</code> badge in the top bar.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Where are my notes and original wallpaper backup stored on my computer?</h3>
+      <p>All NoteStrata™ files are stored locally inside your Windows user folder at <code>%USERPROFILE%\.notestrata</code>:<br />
+      &bull; <code>notes_data.json</code> &amp; <code>notes_data.backup.json</code> (your sticky notes, archive history, and settings)<br />
+      &bull; <code>original_wallpaper_backup.png</code> (your clean, untouched original desktop wallpaper)</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I restore a deleted note?</h3>
+      <p>Click the <strong>History</strong> button in the top bar of NoteStrata™. Up to 40 deleted or cleared sticky notes are automatically archived locally and can be restored to your wallpaper with one click.</p>
+    </div>
+
+    <h2>Legal &amp; Policy Links</h2>
+    <ul>
+      <li><a href="privacy_policy.html" style="color:var(--accent);">Privacy Policy &amp; System Permissions Disclosure</a></li>
+      <li><a href="eula.html" style="color:var(--accent);">End User License Agreement (EULA) &amp; Terms of Service</a></li>
+      <li><a href="open_source_notices.html" style="color:var(--accent);">Third-Party Open Source Notices</a></li>
+    </ul>
+
+    <div class="footer">
+      <strong>NoteStrata™ v1.0.0</strong> &bull; Created &amp; Designed by <strong>Mohamed Dhia Eddine Mechi</strong><br />
+      &copy; 2026 Mohamed Dhia Eddine Mechi. All Rights Reserved.
+    </div>
+  </div>
+</body>
+</html>
